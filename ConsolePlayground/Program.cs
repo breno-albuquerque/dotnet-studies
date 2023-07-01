@@ -1,2 +1,1 @@
-﻿delegate int Test<in T>(int entry);
-
+﻿Console.WriteLine("Console");

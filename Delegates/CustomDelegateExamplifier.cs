@@ -1,6 +1,4 @@
-﻿using Delegates.Entities;
-
-//  Para Estudos: Leitura sequencial (Cima para Baixo) 
+﻿//  Para Estudos: Leitura sequencial (Cima para Baixo) 
 namespace Delegates
 {
     //  Declarando novos Delegates

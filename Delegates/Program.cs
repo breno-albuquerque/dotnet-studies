@@ -1,15 +1,14 @@
 ﻿using Delegates;
-using Delegates.Entities;
 
 //  ---------------------- Custom Delegates -----------------------
-var customDelegateExamplifier = new CustomDelegateExamplifier();
+
+var customDelegateExamplifier = new Delegates.CustomDelegateExamplifier();
 
 customDelegateExamplifier.ExecuteExample_1();
 customDelegateExamplifier.ExecuteExample_2();
 customDelegateExamplifier.ExecuteExample_3((item) => item < 0);
 
 //  ----------------------  Existing Delegates -----------------------
-
 var existingDelegateExamplifier = new ExistingDelegatesExamplifier();
 
 existingDelegateExamplifier.ExecutePredicateExample((item) => item < 0);
