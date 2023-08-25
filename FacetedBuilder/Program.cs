@@ -5,7 +5,7 @@
         .WithNumber(4001)
     .Offers()
         .CleaningServiceBetween(10, 18)
-        .FoodRestaurantServiceBetween(6, 22)
+        .RestaurantServiceBetween(6, 22)
     .Build();
 
 Console.WriteLine("Ouro Minas Hotel: " + ouroMinasHotel);
@@ -20,12 +20,12 @@ public class Hotel
     // services
     public int CleaningServiceStartHour { get; set; }
     public int CleaningServiceEndHour { get; set; }
-    public int FoodRestaurantOpenHour { get; set; }
-    public int FoodServiceCloseHour { get; set; }
+    public int RestaurantServiceOpenHour { get; set; }
+    public int RestaurantServiceCloseHour { get; set; }
 
     public override string ToString()
     {
-        return $"{nameof(City)}: {City}, {nameof(Street)}: {Street}, {nameof(Number)}: {Number}, {nameof(CleaningServiceStartHour)}: {CleaningServiceStartHour}, {nameof(CleaningServiceEndHour)}: {CleaningServiceEndHour}, {nameof(FoodRestaurantOpenHour)}: {FoodRestaurantOpenHour}, {nameof(FoodServiceCloseHour)}: {FoodServiceCloseHour}";
+        return $"{nameof(City)}: {City}, {nameof(Street)}: {Street}, {nameof(Number)}: {Number}, {nameof(CleaningServiceStartHour)}: {CleaningServiceStartHour}, {nameof(CleaningServiceEndHour)}: {CleaningServiceEndHour}, {nameof(RestaurantServiceOpenHour)}: {RestaurantServiceOpenHour}, {nameof(RestaurantServiceCloseHour)}: {RestaurantServiceCloseHour}";
     }
 }
 
@@ -80,10 +80,10 @@ public class ServiceBuilder : HotelBuilder
         return this;
     }
 
-    public ServiceBuilder FoodRestaurantServiceBetween(int openHour, int endHour)
+    public ServiceBuilder RestaurantServiceBetween(int openHour, int endHour)
     {
-        Hotel.FoodRestaurantOpenHour = openHour;
-        Hotel.FoodServiceCloseHour = endHour;
+        Hotel.RestaurantServiceOpenHour = openHour;
+        Hotel.RestaurantServiceCloseHour = endHour;
         return this;
     }
 }
