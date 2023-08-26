@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
+        <AssemblyName>Files</AssemblyName>
+        <RootNamespace>Files</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Files\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Files\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Files\**" />
+    </ItemGroup>
+
+</Project>
