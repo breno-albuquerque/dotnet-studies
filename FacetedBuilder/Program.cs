@@ -1,4 +1,5 @@
-﻿var ouroMinasHotel = new HotelBuilderFacade()
+﻿// Demo
+var ouroMinasHotel = new HotelBuilderFacade()
     .IsLocated
         .OnCity("Belo Horizonte")
         .OnStreet("Cristiano Machado")
@@ -9,7 +10,8 @@
     .Build();
 
 Console.WriteLine("Ouro Minas Hotel: " + ouroMinasHotel);
-    
+
+// Classe a ser construída
 public class Hotel
 {
     // location
@@ -29,7 +31,8 @@ public class Hotel
     }
 }
 
-public class HotelBuilderFacade // Façade (Fachada)
+// Façade - Fachada
+public class HotelBuilderFacade 
 {
     protected Hotel Hotel { get; set; } = new Hotel();
 
@@ -40,6 +43,7 @@ public class HotelBuilderFacade // Façade (Fachada)
     public Hotel Build() => Hotel;
 }
 
+// Location Builder
 public class LocationBuilderFacade : HotelBuilderFacade
 {
     public LocationBuilderFacade(Hotel hotel)
@@ -66,6 +70,7 @@ public class LocationBuilderFacade : HotelBuilderFacade
     }
 }
 
+// Service Builder
 public class ServiceBuilderFacade : HotelBuilderFacade
 {
     public ServiceBuilderFacade(Hotel hotel)

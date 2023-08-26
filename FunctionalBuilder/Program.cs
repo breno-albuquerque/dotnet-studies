@@ -7,7 +7,7 @@ var car = new CarBuilder()
 
 Console.WriteLine(car);
 
-// Classe que deve ser construída
+// Classe a ser construída
 public class Car
 {
     public string Brand { get; set; }

@@ -1,12 +1,29 @@
-﻿var car = CarBuilder.Create()
+﻿// Demo
+var car = CarBuilder.Create()
     .OfType(CarType.Crossover)
     .WithWheels(10)
     .Build();
 
+Console.WriteLine(car);
+
+public class Car
+{
+    public CarType Type { get; set; }
+    
+    public int WheelSize { get; set; }
+
+    public override string ToString()
+    {
+        return $"{nameof(Type)}: {Type}, {nameof(WheelSize)}: {WheelSize}";
+    }
+}
+
+// Classe a ser construída
 public class CarBuilder
 {
     public static ICarType Create() => new CarBuilderImpl();
     
+    // Implementação do Builder
     private class CarBuilderImpl : ICarType, IWheelSize, ICarBuilder 
     {
         private Car car => new();
@@ -33,13 +50,8 @@ public class CarBuilder
     }
 }
 
-public class Car
-{
-    public CarType Type { get; set; }
-    
-    public int WheelSize { get; set; }
-}
 
+//  Interfaces segregadas
 public interface ICarType
 {
     IWheelSize OfType(CarType type);
@@ -55,6 +67,7 @@ public interface ICarBuilder
     Car Build();
 }
 
+// Tipo de carro
 public enum CarType
 {
     Crossover = 1,
