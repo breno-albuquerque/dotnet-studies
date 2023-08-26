@@ -6,6 +6,7 @@ var car = CarBuilder.Create()
 
 Console.WriteLine(car);
 
+// Classe a ser construída
 public class Car
 {
     public CarType Type { get; set; }
@@ -18,7 +19,7 @@ public class Car
     }
 }
 
-// Classe a ser construída
+// Builder que expões método de criação
 public class CarBuilder
 {
     public static ICarType Create() => new CarBuilderImpl();
