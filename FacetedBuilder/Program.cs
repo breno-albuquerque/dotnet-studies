@@ -1,9 +1,9 @@
-﻿var ouroMinasHotel = new HotelBuilder()
-    .IsLocated()
+﻿var ouroMinasHotel = new HotelBuilderFacade()
+    .IsLocated
         .OnCity("Belo Horizonte")
         .OnStreet("Cristiano Machado")
         .WithNumber(4001)
-    .Offers()
+    .Offers
         .CleaningServiceBetween(10, 18)
         .RestaurantServiceBetween(6, 22)
     .Build();
@@ -29,58 +29,58 @@ public class Hotel
     }
 }
 
-public class HotelBuilder // Façade (Fachada)
+public class HotelBuilderFacade // Façade (Fachada)
 {
     protected Hotel Hotel { get; set; } = new Hotel();
 
-    public LocationBuilder IsLocated() => new LocationBuilder(Hotel);
+    public LocationBuilderFacade IsLocated => new LocationBuilderFacade(Hotel);
 
-    public ServiceBuilder Offers() => new ServiceBuilder(Hotel);
+    public ServiceBuilderFacade Offers => new ServiceBuilderFacade(Hotel);
 
     public Hotel Build() => Hotel;
 }
 
-public class LocationBuilder : HotelBuilder
+public class LocationBuilderFacade : HotelBuilderFacade
 {
-    public LocationBuilder(Hotel hotel)
+    public LocationBuilderFacade(Hotel hotel)
     {
         Hotel = hotel;
     }
     
-    public LocationBuilder OnCity(string city)
+    public LocationBuilderFacade OnCity(string city)
     {
         Hotel.City = city;
         return this;
     }
     
-    public LocationBuilder OnStreet(string street)
+    public LocationBuilderFacade OnStreet(string street)
     {
         Hotel.Street = street;
         return this;
     }
     
-    public LocationBuilder WithNumber(int number)
+    public LocationBuilderFacade WithNumber(int number)
     {
         Hotel.Number = number;
         return this;
     }
 }
 
-public class ServiceBuilder : HotelBuilder
+public class ServiceBuilderFacade : HotelBuilderFacade
 {
-    public ServiceBuilder(Hotel hotel)
+    public ServiceBuilderFacade(Hotel hotel)
     {
         Hotel = hotel;
     }
     
-    public ServiceBuilder CleaningServiceBetween(int startHour, int endHour)
+    public ServiceBuilderFacade CleaningServiceBetween(int startHour, int endHour)
     {
         Hotel.CleaningServiceStartHour = startHour;
         Hotel.CleaningServiceEndHour = endHour;
         return this;
     }
 
-    public ServiceBuilder RestaurantServiceBetween(int openHour, int endHour)
+    public ServiceBuilderFacade RestaurantServiceBetween(int openHour, int endHour)
     {
         Hotel.RestaurantServiceOpenHour = openHour;
         Hotel.RestaurantServiceCloseHour = endHour;

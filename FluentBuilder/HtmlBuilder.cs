@@ -1,4 +1,4 @@
-namespace BasicBuilder;
+namespace FluentBuilder;
 
 public class HtmlBuilder
 {

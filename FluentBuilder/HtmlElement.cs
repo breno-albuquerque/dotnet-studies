@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace BasicBuilder;
+namespace FluentBuilder;
 
 public class HtmlElement
 {

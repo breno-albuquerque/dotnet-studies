@@ -10,11 +10,11 @@ Movie[] movies = { interstellar, inception, hangover, wolf };
 
 var sciFyCondition = new GenreCondition(Genre.SciFi);
 var twoHoursCondition = new DurationCondition(Duration.TwoHours);
-var twouHourAndSciFiCondition = new DoubleCondition<Movie>(sciFyCondition, twoHoursCondition);
+var twoHourAndSciFiCondition = new DoubleCondition<Movie>(sciFyCondition, twoHoursCondition);
 
 var scyFyMovies = movieFilter.Filter(movies, sciFyCondition);
 var twoHourMovies = movieFilter.Filter(movies, twoHoursCondition);
-var twoHourSciFiMovies = movieFilter.Filter(movies, twouHourAndSciFiCondition);
+var twoHourSciFiMovies = movieFilter.Filter(movies, twoHourAndSciFiCondition);
 
 var comedyMovies = movieFilter.Filter(movies, (Movie movie) => movie.Genre == Genre.Comedy);
 
@@ -91,7 +91,7 @@ public class DurationCondition : ICondition<Movie>
 
 public class DoubleCondition<T> : ICondition<T>
 {
-    private ICondition<T> _condition1, _condition2;
+    private readonly ICondition<T> _condition1, _condition2;
 
     public DoubleCondition(ICondition<T> condition1, ICondition<T> condition2)
     {

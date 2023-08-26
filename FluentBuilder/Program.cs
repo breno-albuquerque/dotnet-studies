@@ -1,4 +1,4 @@
-﻿using BasicBuilder;
+﻿using FluentBuilder;
 
 // With builder
 var builder = new HtmlBuilder("ul")
