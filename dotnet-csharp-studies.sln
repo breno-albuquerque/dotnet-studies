@@ -51,7 +51,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectTrackingWithFactory",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkReplacementWithFactory", "DesignPatterns\Factory\BulkReplacementWithFactory\BulkReplacementWithFactory.csproj", "{AE51F418-4470-4349-A654-C2B9FC399F9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonAbstractFactories", "DesignPatterns\Factory\NonAbstractFactories\NonAbstractFactories.csproj", "{E5AF2E32-D549-4F4D-8CB5-E340AB057D16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "DesignPatterns\Factory\FactoryMethod\FactoryMethod.csproj", "{E5AF2E32-D549-4F4D-8CB5-E340AB057D16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "DesignPatterns\Factory\AbstractFactory\AbstractFactory.csproj", "{A17002E6-0905-4091-82E9-1AD1F833B97E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -138,6 +140,10 @@ Global
 		{E5AF2E32-D549-4F4D-8CB5-E340AB057D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5AF2E32-D549-4F4D-8CB5-E340AB057D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5AF2E32-D549-4F4D-8CB5-E340AB057D16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A17002E6-0905-4091-82E9-1AD1F833B97E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A17002E6-0905-4091-82E9-1AD1F833B97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A17002E6-0905-4091-82E9-1AD1F833B97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A17002E6-0905-4091-82E9-1AD1F833B97E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FCCF0EC2-C528-4EC3-98F1-08DA416F229B} = {82C2A303-9E2A-4EE6-ACC4-D213B65DFA18}
@@ -160,5 +166,6 @@ Global
 		{AD4AFF14-EEA0-488C-B994-7C88F9435C36} = {23645139-2B2E-4CB1-AE85-8A511BE5D91D}
 		{AE51F418-4470-4349-A654-C2B9FC399F9E} = {23645139-2B2E-4CB1-AE85-8A511BE5D91D}
 		{E5AF2E32-D549-4F4D-8CB5-E340AB057D16} = {23645139-2B2E-4CB1-AE85-8A511BE5D91D}
+		{A17002E6-0905-4091-82E9-1AD1F833B97E} = {23645139-2B2E-4CB1-AE85-8A511BE5D91D}
 	EndGlobalSection
 EndGlobal
