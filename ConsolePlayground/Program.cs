@@ -1,39 +1,34 @@
-﻿using System.Text;
-
-// Demo
-var cb = new CodeBuilder("Person").AddField("Name", "string").AddField("Age", "int");
-Console.WriteLine(cb);
-
-public class CodeBuilder
+﻿
+public class Car
 {
-    private readonly string _className;
-
-    private readonly Dictionary<string, string> _fields = new();
-
-    public CodeBuilder(string className)
+    private void Lock()
     {
-        _className = className;
-    }
-
-    public CodeBuilder AddField(string name, string type)
-    {
-        _fields.Add(type, name);
-        return this;
-    }
-
-    public override string ToString()
-    {
-        var sb = new StringBuilder();
         
-        sb.AppendLine($"public class {_className}").AppendLine("{");
+    }
 
-        foreach (var pair in _fields)
-        {
-            sb.AppendLine($"  public {pair.Key} {pair.Value};");
-        }
-
-        sb.AppendLine("}");
-
-        return sb.ToString();
+    public void Test()
+    {
+        var car = new Car();
+        car.Lock();
     }
 }
+
+// public class Foo 
+// {
+//     private Foo() 
+//     {
+//
+//     }
+//
+//     private async Task<Foo> InitAsync()
+//     {
+//         await Task.Delay(1000); // lógica assíncrona
+//         return this;
+//     }
+//
+//     public static Task<Foo> CreateAsync()
+//     {
+//         var result = new Foo();
+//         return result.InitAsync();
+//     }
+// }
