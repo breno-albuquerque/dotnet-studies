@@ -85,4 +85,3 @@ public class Foo
         return foo.InitAsync();
     }
 }
-
