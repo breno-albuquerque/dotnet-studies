@@ -65,6 +65,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonImplementation", "DesignPatterns\Singleton\SingletonImplementation\SingletonImplementation.csproj", "{6C582555-2F00-4EDD-83C4-CAC623096C3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonostateApproach", "DesignPatterns\Singleton\MonostateApproach\MonostateApproach.csproj", "{193D0736-FC1D-43EF-9A30-FAC051BEA52B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -166,6 +168,10 @@ Global
 		{6C582555-2F00-4EDD-83C4-CAC623096C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C582555-2F00-4EDD-83C4-CAC623096C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C582555-2F00-4EDD-83C4-CAC623096C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193D0736-FC1D-43EF-9A30-FAC051BEA52B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193D0736-FC1D-43EF-9A30-FAC051BEA52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193D0736-FC1D-43EF-9A30-FAC051BEA52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193D0736-FC1D-43EF-9A30-FAC051BEA52B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FCCF0EC2-C528-4EC3-98F1-08DA416F229B} = {82C2A303-9E2A-4EE6-ACC4-D213B65DFA18}
@@ -194,5 +200,6 @@ Global
 		{C5013DDB-9EE0-434F-905E-EE4C71B487FF} = {90CF5BC3-BE2C-44A4-9BEF-9A875A8BAE45}
 		{082B5349-37EF-470C-B0D7-10B524FBEFE5} = {6ED33CC8-7A4D-4B4A-9550-DEDFD207378C}
 		{6C582555-2F00-4EDD-83C4-CAC623096C3A} = {082B5349-37EF-470C-B0D7-10B524FBEFE5}
+		{193D0736-FC1D-43EF-9A30-FAC051BEA52B} = {082B5349-37EF-470C-B0D7-10B524FBEFE5}
 	EndGlobalSection
 EndGlobal
