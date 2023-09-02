@@ -31,6 +31,5 @@ public class Person
     public override string ToString()
     {
         return $"{nameof(Name)}: {Name}, {nameof(Age)}: {Age}";
-        
     }
 }
