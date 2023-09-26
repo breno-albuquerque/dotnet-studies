@@ -26,7 +26,6 @@ Console.WriteLine(yellowCircle.AsString());
 var yellowAndBlueCircle = new ColoredShape(yellowCircle, Color.Blue); // Allowed due to AllCyclesAllowed policy
 Console.WriteLine(yellowAndBlueCircle.AsString());
 
-
 // Different Decorators
 var bigYellowCircle = new ColoredShape(bigCircle, Color.Yellow); // With different types the NoCycleAllowed policy accepts
 Console.WriteLine(bigYellowCircle.AsString());
@@ -42,8 +41,7 @@ public sealed class Circle : Shape
     {
     }
 
-    public override string AsString() =>
-        $"I'm a {nameof(Circle)}";
+    public override string AsString() => $"I'm a {nameof(Circle)}";
 }
 
 // Política de ciclos decorator (abstrato)
@@ -146,8 +144,6 @@ public class ColoredShape : ShapeDecoratorWithPolicy<ColoredShape, AllCyclesAllo
         return builder.ToString();
     }
 }
-
-
 
 public enum Color
 {
