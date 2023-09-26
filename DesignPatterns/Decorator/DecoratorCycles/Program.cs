@@ -44,13 +44,12 @@ public sealed class Circle : Shape
     public override string AsString() => $"I'm a {nameof(Circle)}";
 }
 
-// Política de ciclos decorator (abstrato)
+// Políticas de ciclos de decorators
 public interface IShapeDecoratorCyclePolicy
 {
     public bool IsNewDecoratorTypeAllowed(Type type, IList<Type> allTypes);
 }
 
-// Política de ciclos decorator (exemplo de implementação)
 public class NoCycleAllowed : IShapeDecoratorCyclePolicy
 {
     private const string CycleMessage = "Decorator cycle detected";
