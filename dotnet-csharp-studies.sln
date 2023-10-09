@@ -11,21 +11,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetDependencyInjection",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePlayground", "ConsolePlayground\ConsolePlayground.csproj", "{B59D97C1-55D2-49CE-B6E1-0AF2DEEC2E39}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cSharp", "cSharp", "{E4825D9F-6FD0-473E-82D6-06859B199175}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Language", "Language", "{E4825D9F-6FD0-473E-82D6-06859B199175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProperties", "cSharp\AutoProperties\AutoProperties.csproj", "{DA44B03B-724F-4A39-A485-01DEF432BF94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProperties", "Language\AutoProperties\AutoProperties.csproj", "{DA44B03B-724F-4A39-A485-01DEF432BF94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casting", "cSharp\Casting\Casting.csproj", "{B72A3965-7165-4CDE-B9E2-C7CA3BFBDE95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casting", "Language\Casting\Casting.csproj", "{B72A3965-7165-4CDE-B9E2-C7CA3BFBDE95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "cSharp\Delegates\Delegates.csproj", "{981DD4F9-EFEA-47E1-84A4-969F8032C633}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Language\Delegates\Delegates.csproj", "{981DD4F9-EFEA-47E1-84A4-969F8032C633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files", "cSharp\Files\Files.csproj", "{977132EE-AC89-4FB1-9F06-C83D38FE18A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files", "Language\Files\Files.csproj", "{977132EE-AC89-4FB1-9F06-C83D38FE18A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexers", "cSharp\Indexers\Indexers.csproj", "{8C8B10BA-DCCE-47B4-8FAB-E8677866445E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexers", "Language\Indexers\Indexers.csproj", "{8C8B10BA-DCCE-47B4-8FAB-E8677866445E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectType", "cSharp\ObjectType\ObjectType.csproj", "{BB09D7C7-98BC-436E-8332-49FC561E76CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectType", "Language\ObjectType\ObjectType.csproj", "{BB09D7C7-98BC-436E-8332-49FC561E76CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDataAccess", "cSharp\SqlDataAccess\SqlDataAccess.csproj", "{4F5B15A2-59CE-4B49-92BD-3FF540A55CCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDataAccess", "Language\SqlDataAccess\SqlDataAccess.csproj", "{4F5B15A2-59CE-4B49-92BD-3FF540A55CCD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{6ED33CC8-7A4D-4B4A-9550-DEDFD207378C}"
 EndProject
