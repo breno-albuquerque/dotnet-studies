@@ -105,9 +105,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyweightImplementation", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proxy", "Proxy", "{4784D264-395E-4C81-B544-530F4957ABB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyProxy", "DesignPatterns\Proxy\PropertyProxy\PropertyProxy.csproj", "{F4C78F77-0BFD-47F6-915E-31DF8A13FDC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueProxy", "DesignPatterns\Proxy\ValueProxy\ValueProxy.csproj", "{F4C78F77-0BFD-47F6-915E-31DF8A13FDC5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitOperators", "Language\ImplicitOperators\ImplicitOperators.csproj", "{FCB9D746-6E2E-469A-BABC-E99B1985FBB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArchitecturalPattenrs", "ArchitecturalPattenrs", "{BCA6DCA6-8A94-47EB-A259-C66560AF54DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
