@@ -111,7 +111,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitOperators", "Langua
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArchitecturalPattenrs", "ArchitecturalPattenrs", "{BCA6DCA6-8A94-47EB-A259-C66560AF54DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLoggerProxy", "DesignPatterns\Proxy\DynamicLoggerProxy\DynamicLoggerProxy.csproj", "{242CF55B-0BBF-4857-9F93-01F4DC93B516}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProxyForLogging", "DesignPatterns\Proxy\DynamicProxyForLogging\DynamicProxyForLogging.csproj", "{242CF55B-0BBF-4857-9F93-01F4DC93B516}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNet", "DotNet", "{79BBA1B5-E298-4C6E-A026-9B8F695AF98D}"
 EndProject
