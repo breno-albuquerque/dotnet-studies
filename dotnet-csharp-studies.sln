@@ -115,7 +115,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNet", "DotNet", "{79BBA1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicObject", "DotNet\DynamicObject\DynamicObject.csproj", "{97D56F03-40BD-418E-B355-15CBF49EEE8A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsability", "ChainOfResponsability", "{D8908FAE-827C-45E6-8359-4677998B54EE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibility", "ChainOfResponsibility", "{D8908FAE-827C-45E6-8359-4677998B54EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodChain", "DesignPatterns\ChainOfResponsability\MethodChain\MethodChain.csproj", "{125B62B3-EB17-470D-8F8D-DDDF4B383009}"
 EndProject
