@@ -9,7 +9,15 @@
 var root = new Node<int>(1, new Node<int>(2), new Node<int>(3));
 var tree = new BinaryTree<int>(root);
 
+// With foreach
+foreach (var node in tree.InOrder)
+{
+    Console.WriteLine(node.Value);
+}
+
+// Since is IEnumerable, we can use Linq
 Console.WriteLine(string.Join(",", tree.InOrder.Select(x => x.Value)));
+
 
 public class BinaryTree<T>
 {
@@ -43,7 +51,7 @@ public class BinaryTree<T>
     }
 }
 
-// Bynary Tree
+
 public class Node<T>
 {
     public T Value { get; set; }
