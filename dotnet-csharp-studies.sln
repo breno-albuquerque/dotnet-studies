@@ -153,6 +153,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicImplementation", "De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandmadeStateMachine", "DesignPatterns\State\HandmadeStateMachine\HandmadeStateMachine.csproj", "{1C77CCA7-C343-4307-A374-7A498CC5C82C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateWithSwitchExpressions", "DesignPatterns\State\StateWithSwitchExpressions\StateWithSwitchExpressions.csproj", "{C495AEE8-43EB-49F6-839A-FDAAF203DDC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -370,6 +372,10 @@ Global
 		{1C77CCA7-C343-4307-A374-7A498CC5C82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C77CCA7-C343-4307-A374-7A498CC5C82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C77CCA7-C343-4307-A374-7A498CC5C82C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C495AEE8-43EB-49F6-839A-FDAAF203DDC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C495AEE8-43EB-49F6-839A-FDAAF203DDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C495AEE8-43EB-49F6-839A-FDAAF203DDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C495AEE8-43EB-49F6-839A-FDAAF203DDC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FCCF0EC2-C528-4EC3-98F1-08DA416F229B} = {82C2A303-9E2A-4EE6-ACC4-D213B65DFA18}
@@ -440,5 +446,6 @@ Global
 		{2E40B789-D587-45BB-B498-068BA39AF8AB} = {6ED33CC8-7A4D-4B4A-9550-DEDFD207378C}
 		{E8CB4BAC-AB4B-47EA-AEDE-734F8745B175} = {2E40B789-D587-45BB-B498-068BA39AF8AB}
 		{1C77CCA7-C343-4307-A374-7A498CC5C82C} = {2E40B789-D587-45BB-B498-068BA39AF8AB}
+		{C495AEE8-43EB-49F6-839A-FDAAF203DDC9} = {2E40B789-D587-45BB-B498-068BA39AF8AB}
 	EndGlobalSection
 EndGlobal
