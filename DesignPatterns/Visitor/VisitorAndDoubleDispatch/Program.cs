@@ -10,17 +10,18 @@ componentA.Accept(visitor2);
 componentB.Accept(visitor1);
 componentB.Accept(visitor2);
 
+// Isso geraria erro:
+// BaseComponent component = new ConcreteComponentA();
+// visitor1.Visit(component);
+
 public interface IComponent
 {
     void Accept(IVisitor visitor);
 }
 
-public class BaseComponent : IComponent
+public abstract class BaseComponent
 {
-    public virtual void Accept(IVisitor visitor)
-    {
-        
-    }
+    public abstract void Accept(IVisitor visitor);
 }
 
 public class ConcreteComponentA : BaseComponent
