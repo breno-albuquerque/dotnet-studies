@@ -14,11 +14,6 @@ componentB.Accept(visitor2);
 // BaseComponent component = new ConcreteComponentA();
 // visitor1.Visit(component);
 
-public interface IComponent
-{
-    void Accept(IVisitor visitor);
-}
-
 public abstract class BaseComponent
 {
     public abstract void Accept(IVisitor visitor);
