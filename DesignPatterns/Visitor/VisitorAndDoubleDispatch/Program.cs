@@ -10,9 +10,10 @@ componentA.Accept(visitor2);
 componentB.Accept(visitor1);
 componentB.Accept(visitor2);
 
-// Isso geraria erro:
-// BaseComponent component = new ConcreteComponentA();
-// visitor1.Visit(component);
+visitor1.Visit(componentA);
+visitor1.Visit(componentB);
+visitor2.Visit(componentA);
+visitor2.Visit(componentB);
 
 public abstract class BaseComponent
 {
