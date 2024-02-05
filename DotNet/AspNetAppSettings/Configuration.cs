@@ -1,4 +1,7 @@
 ﻿//  Criando classe Configuration como estática
+
+namespace AspNetAppSettings;
+
 public static class Configuration
 {
     public static string ApiKeyName { get; set; }

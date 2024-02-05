@@ -1,4 +1,4 @@
-namespace Events.EventsWithCustomArgs;
+namespace Events.Demo_2___EventsWithCustomArgs;
 
 public class VideoEventArgs : EventArgs
 {

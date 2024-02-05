@@ -27,6 +27,7 @@ Console.WriteLine($"B: {myDict.B}");
 Console.WriteLine($"C: {myDict.C}");
 Console.WriteLine($"D: {myDict.D}");
 
+
 public class MyDictionary : DynamicObject
 {
     private readonly Dictionary<string, string> _root = new();
@@ -64,7 +65,7 @@ public class MyDictionary : DynamicObject
             }
         }
     }
-    
+
     public override bool TryInvokeMember(InvokeMemberBinder binder, object?[]? args, out object? result)
     {
         Console.WriteLine($"Invoking member: {binder.Name}");

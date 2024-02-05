@@ -1,4 +1,4 @@
-namespace Events.BasicEvents;
+namespace Events.Demo_1___BasicEvents;
 
 public class Video
 {

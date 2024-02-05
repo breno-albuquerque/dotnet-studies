@@ -3,29 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNet", "AspNet", "{82C2A303-9E2A-4EE6-ACC4-D213B65DFA18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetAppSettings", "DotNet\AspNetAppSettings\AspNetAppSettings.csproj", "{FCCF0EC2-C528-4EC3-98F1-08DA416F229B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetAppSettings", "AspNet\AspNetAppSettings\AspNetAppSettings.csproj", "{FCCF0EC2-C528-4EC3-98F1-08DA416F229B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetDependencyInjection", "AspNet\AspNetDependencyInjection\AspNetDependencyInjection.csproj", "{05A4D3DA-24AA-4B86-B5A9-60AD106FA6FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetDependencyInjection", "DotNet\AspNetDependencyInjection\AspNetDependencyInjection.csproj", "{05A4D3DA-24AA-4B86-B5A9-60AD106FA6FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePlayground", "ConsolePlayground\ConsolePlayground.csproj", "{B59D97C1-55D2-49CE-B6E1-0AF2DEEC2E39}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpLanguage", "CSharpLanguage", "{E4825D9F-6FD0-473E-82D6-06859B199175}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNet", "DotNet", "{E4825D9F-6FD0-473E-82D6-06859B199175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProperties", "CSharpLanguage\AutoProperties\AutoProperties.csproj", "{DA44B03B-724F-4A39-A485-01DEF432BF94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProperties", "DotNet\AutoProperties\AutoProperties.csproj", "{DA44B03B-724F-4A39-A485-01DEF432BF94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casting", "CSharpLanguage\Casting\Casting.csproj", "{B72A3965-7165-4CDE-B9E2-C7CA3BFBDE95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casting", "DotNet\Casting\Casting.csproj", "{B72A3965-7165-4CDE-B9E2-C7CA3BFBDE95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "CSharpLanguage\Delegates\Delegates.csproj", "{981DD4F9-EFEA-47E1-84A4-969F8032C633}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "DotNet\Delegates\Delegates.csproj", "{981DD4F9-EFEA-47E1-84A4-969F8032C633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files", "CSharpLanguage\Files\Files.csproj", "{977132EE-AC89-4FB1-9F06-C83D38FE18A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files", "DotNet\Files\Files.csproj", "{977132EE-AC89-4FB1-9F06-C83D38FE18A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexers", "CSharpLanguage\Indexers\Indexers.csproj", "{8C8B10BA-DCCE-47B4-8FAB-E8677866445E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexers", "DotNet\Indexers\Indexers.csproj", "{8C8B10BA-DCCE-47B4-8FAB-E8677866445E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectType", "CSharpLanguage\ObjectType\ObjectType.csproj", "{BB09D7C7-98BC-436E-8332-49FC561E76CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectType", "DotNet\ObjectType\ObjectType.csproj", "{BB09D7C7-98BC-436E-8332-49FC561E76CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDataAccess", "CSharpLanguage\SqlDataAccess\SqlDataAccess.csproj", "{4F5B15A2-59CE-4B49-92BD-3FF540A55CCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDataAccess", "DotNet\SqlDataAccess\SqlDataAccess.csproj", "{4F5B15A2-59CE-4B49-92BD-3FF540A55CCD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{6ED33CC8-7A4D-4B4A-9550-DEDFD207378C}"
 EndProject
@@ -107,11 +105,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proxy", "Proxy", "{4784D264
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueProxy", "DesignPatterns\Proxy\ValueProxy\ValueProxy.csproj", "{F4C78F77-0BFD-47F6-915E-31DF8A13FDC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitOperators", "CSharpLanguage\ImplicitOperators\ImplicitOperators.csproj", "{FCB9D746-6E2E-469A-BABC-E99B1985FBB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitOperators", "DotNet\ImplicitOperators\ImplicitOperators.csproj", "{FCB9D746-6E2E-469A-BABC-E99B1985FBB8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProxyForLogging", "DesignPatterns\Proxy\DynamicProxyForLogging\DynamicProxyForLogging.csproj", "{242CF55B-0BBF-4857-9F93-01F4DC93B516}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNet", "DotNet", "{79BBA1B5-E298-4C6E-A026-9B8F695AF98D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicObject", "DotNet\DynamicObject\DynamicObject.csproj", "{97D56F03-40BD-418E-B355-15CBF49EEE8A}"
 EndProject
@@ -119,13 +115,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibility", "Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodChain", "DesignPatterns\ChainOfResponsibility\MethodChain\MethodChain.csproj", "{125B62B3-EB17-470D-8F8D-DDDF4B383009}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverrideAndNew", "CSharpLanguage\OverrideAndNew\OverrideAndNew.csproj", "{4FE863EE-E173-474E-8C6D-6511350280A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverrideAndNew", "DotNet\OverrideAndNew\OverrideAndNew.csproj", "{4FE863EE-E173-474E-8C6D-6511350280A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerChain", "DesignPatterns\ChainOfResponsibility\BrokerChain\BrokerChain.csproj", "{83B3C197-6980-48C0-AE0E-6D21408E4978}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "CSharpLanguage\Events\Events.csproj", "{1582E79B-88CD-4A58-AEE8-78943998DAC7}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArchitecture", "CleanArchitecture", "{2A9EB8C1-4B38-4374-801E-7DA716F4EF51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "DotNet\Events\Events.csproj", "{1582E79B-88CD-4A58-AEE8-78943998DAC7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command", "Command", "{1B9B14A2-540F-40D0-A4F8-62A612A84ED5}"
 EndProject
@@ -135,7 +129,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Iterator", "Iterator", "{C0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "DesignPatterns\Iterator\Iterator.csproj", "{588D2C11-BF8E-40A7-8F12-2F163FCF8E29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enumerators", "CSharpLanguage\Enumerators\Enumerators.csproj", "{E3DEF4A4-4406-44FA-BF7C-4EBAD4F6D6E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enumerators", "DotNet\Enumerators\Enumerators.csproj", "{E3DEF4A4-4406-44FA-BF7C-4EBAD4F6D6E1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mediator", "Mediator", "{47E42B2A-3F58-407F-A10B-B65EDE15543C}"
 EndProject
@@ -174,6 +168,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorAndDoubleDispatch", "DesignPatterns\Visitor\VisitorAndDoubleDispatch\VisitorAndDoubleDispatch.csproj", "{C25059F0-4FBA-48A3-9DDE-1687EBAC7FB4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReductionsAndTransforms", "DesignPatterns\Visitor\ReductionsAndTransforms\ReductionsAndTransforms.csproj", "{F2A1CB78-9506-42B7-B968-36BAF365B67A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{27BEDB8C-904B-4563-8F6E-1878530925ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -422,8 +418,6 @@ Global
 		{F2A1CB78-9506-42B7-B968-36BAF365B67A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FCCF0EC2-C528-4EC3-98F1-08DA416F229B} = {82C2A303-9E2A-4EE6-ACC4-D213B65DFA18}
-		{05A4D3DA-24AA-4B86-B5A9-60AD106FA6FC} = {82C2A303-9E2A-4EE6-ACC4-D213B65DFA18}
 		{DA44B03B-724F-4A39-A485-01DEF432BF94} = {E4825D9F-6FD0-473E-82D6-06859B199175}
 		{B72A3965-7165-4CDE-B9E2-C7CA3BFBDE95} = {E4825D9F-6FD0-473E-82D6-06859B199175}
 		{981DD4F9-EFEA-47E1-84A4-969F8032C633} = {E4825D9F-6FD0-473E-82D6-06859B199175}
@@ -471,7 +465,6 @@ Global
 		{F4C78F77-0BFD-47F6-915E-31DF8A13FDC5} = {4784D264-395E-4C81-B544-530F4957ABB1}
 		{FCB9D746-6E2E-469A-BABC-E99B1985FBB8} = {E4825D9F-6FD0-473E-82D6-06859B199175}
 		{242CF55B-0BBF-4857-9F93-01F4DC93B516} = {4784D264-395E-4C81-B544-530F4957ABB1}
-		{97D56F03-40BD-418E-B355-15CBF49EEE8A} = {79BBA1B5-E298-4C6E-A026-9B8F695AF98D}
 		{D8908FAE-827C-45E6-8359-4677998B54EE} = {6ED33CC8-7A4D-4B4A-9550-DEDFD207378C}
 		{125B62B3-EB17-470D-8F8D-DDDF4B383009} = {D8908FAE-827C-45E6-8359-4677998B54EE}
 		{4FE863EE-E173-474E-8C6D-6511350280A1} = {E4825D9F-6FD0-473E-82D6-06859B199175}
@@ -501,5 +494,8 @@ Global
 		{6AF65609-1502-4097-AC78-17A4A7A26083} = {6ED33CC8-7A4D-4B4A-9550-DEDFD207378C}
 		{C25059F0-4FBA-48A3-9DDE-1687EBAC7FB4} = {6AF65609-1502-4097-AC78-17A4A7A26083}
 		{F2A1CB78-9506-42B7-B968-36BAF365B67A} = {6AF65609-1502-4097-AC78-17A4A7A26083}
+		{97D56F03-40BD-418E-B355-15CBF49EEE8A} = {E4825D9F-6FD0-473E-82D6-06859B199175}
+		{FCCF0EC2-C528-4EC3-98F1-08DA416F229B} = {E4825D9F-6FD0-473E-82D6-06859B199175}
+		{05A4D3DA-24AA-4B86-B5A9-60AD106FA6FC} = {E4825D9F-6FD0-473E-82D6-06859B199175}
 	EndGlobalSection
 EndGlobal

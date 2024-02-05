@@ -1,9 +1,9 @@
-namespace Events.BasicEvents;
+namespace Events.Demo_2___EventsWithCustomArgs;
 
 public sealed class VideoEncoder
 {
     // 1 - Define a delegate
-    public delegate void VideoEncodedEventHandler(object source, EventArgs args);
+    public delegate void VideoEncodedEventHandler(object source, VideoEventArgs args);
     
     // 2 - Define event based on the delegate
     public event VideoEncodedEventHandler? VideoEncoded;
@@ -13,12 +13,12 @@ public sealed class VideoEncoder
         Console.WriteLine("Enconding Video... ");
         Thread.Sleep(3000);
         
-        OnVideoEncoded();
+        OnVideoEncoded(video);
     }
     
     // 3 - Raise the event
-    private void OnVideoEncoded()
+    private void OnVideoEncoded(Video video)
     {
-        VideoEncoded?.Invoke(this, EventArgs.Empty);
+        VideoEncoded?.Invoke(this, new VideoEventArgs() { Video = video });
     }
 }

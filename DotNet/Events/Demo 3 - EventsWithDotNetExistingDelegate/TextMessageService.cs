@@ -1,4 +1,4 @@
-namespace Events.EventsWithDotNetExistingDelegate;
+namespace Events.Demo_3___EventsWithDotNetExistingDelegate;
 
 public class TextMessageService
 {

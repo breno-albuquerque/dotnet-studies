@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace FileIO;
+namespace Files;
 
 public static class InternalDirectory
 {
