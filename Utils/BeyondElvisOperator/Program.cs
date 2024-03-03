@@ -20,6 +20,7 @@ void CheckAddress(Address pAddress)
 bool HasMedicalRecord(Person person)
 {
     // logic
+    return true;
 }
 
 public static class Maybe
