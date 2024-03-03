@@ -171,9 +171,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReductionsAndTransforms", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{27BEDB8C-904B-4563-8F6E-1878530925ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalInversionOfControl", "LocalInversionOfControl\LocalInversionOfControl.csproj", "{500A5541-7A88-4133-ABFD-BD9ACB10C5AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalInversionOfControl", "Utils\LocalInversionOfControl\LocalInversionOfControl.csproj", "{500A5541-7A88-4133-ABFD-BD9ACB10C5AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeyondElvisOperator", "BeyondElvisOperator\BeyondElvisOperator.csproj", "{37E6DC48-18B7-416E-860A-0AE2CEB2AB36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeyondElvisOperator", "Utils\BeyondElvisOperator\BeyondElvisOperator.csproj", "{37E6DC48-18B7-416E-860A-0AE2CEB2AB36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

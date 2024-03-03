@@ -14,12 +14,12 @@ Console.WriteLine(postcode, postcode2);
 // Forma de fazer verificações de nulo indo além de simplesmente utilizar o elvis operator
 void CheckAddress(Address pAddress)
 {
-    throw new NotImplementedException();
+    // logic
 }
 
 bool HasMedicalRecord(Person person)
 {
-    throw new NotImplementedException();
+    // logic
 }
 
 public static class Maybe
