@@ -168,6 +168,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorAndDoubleDispatch", "DesignPatterns\Visitor\VisitorAndDoubleDispatch\VisitorAndDoubleDispatch.csproj", "{C25059F0-4FBA-48A3-9DDE-1687EBAC7FB4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReductionsAndTransforms", "DesignPatterns\Visitor\ReductionsAndTransforms\ReductionsAndTransforms.csproj", "{F2A1CB78-9506-42B7-B968-36BAF365B67A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReductionsAndTransforms", "DesignPatterns\Visitor\ReductionsAndTransforms\ReductionsAndTransforms.csproj", "{F2A1CB78-9506-42B7-B968-36BAF365B67A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{27BEDB8C-904B-4563-8F6E-1878530925ED}"
 EndProject
@@ -182,6 +183,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinkedLists", "LinkedLists", "{919430A9-43ED-433A-9F6A-50F83145D67C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoublyLinkedLists", "DataStructures\LinkedLists\DoublyLinkedLists\DoublyLinkedLists.csproj", "{EE99C17B-5652-4CD6-A16F-2BE599B56CF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{EE5C5749-1C56-4B64-858F-7185AEFF672E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MergeSort", "MergeSort", "{91647807-55CF-4FEE-AD7F-2D6C17486696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "Algorithms\MergeSort\MergeSort.csproj", "{1718DC72-F164-40F9-A3B5-7553A01A2354}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -448,6 +455,10 @@ Global
 		{EE99C17B-5652-4CD6-A16F-2BE599B56CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE99C17B-5652-4CD6-A16F-2BE599B56CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE99C17B-5652-4CD6-A16F-2BE599B56CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1718DC72-F164-40F9-A3B5-7553A01A2354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1718DC72-F164-40F9-A3B5-7553A01A2354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1718DC72-F164-40F9-A3B5-7553A01A2354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1718DC72-F164-40F9-A3B5-7553A01A2354}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DA44B03B-724F-4A39-A485-01DEF432BF94} = {E4825D9F-6FD0-473E-82D6-06859B199175}
@@ -536,5 +547,7 @@ Global
 		{919430A9-43ED-433A-9F6A-50F83145D67C} = {3494C5AE-B2C3-4B72-BB37-79EE6E00C042}
 		{341BED5E-F733-4C15-A638-E5F7D1FA4D7E} = {919430A9-43ED-433A-9F6A-50F83145D67C}
 		{EE99C17B-5652-4CD6-A16F-2BE599B56CF7} = {919430A9-43ED-433A-9F6A-50F83145D67C}
+		{91647807-55CF-4FEE-AD7F-2D6C17486696} = {EE5C5749-1C56-4B64-858F-7185AEFF672E}
+		{1718DC72-F164-40F9-A3B5-7553A01A2354} = {91647807-55CF-4FEE-AD7F-2D6C17486696}
 	EndGlobalSection
 EndGlobal
