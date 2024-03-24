@@ -14,9 +14,9 @@ void InsertionSort(int[] arr, int length)
 {
     for (int i = 1; i < length; i++)
     {
-        int temp = arr[i];
-        int pos = i;
-
+        int temp = arr[i]; 
+        int pos = i; 
+        
         while (pos > 0 && arr[pos - 1] > temp)
         {
             arr[pos] = arr[pos - 1];
@@ -26,3 +26,4 @@ void InsertionSort(int[] arr, int length)
         arr[pos] = temp;
     }
 }
+
