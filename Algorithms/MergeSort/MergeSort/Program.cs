@@ -12,22 +12,22 @@ void MergeSort(int[] arr, int len)
     
     int half = len / 2;
 
-    int lenghtA = half;
-    int lengthB = len % 2 == 0 ? half : len - half; // if length is odd
+    int lenA = half;
+    int lenB = len % 2 == 0 ? half : len - half; // if length is odd
     
     // Create 2 halves
-    int[] arrA = new int[lenghtA];
-    int[] arrB = new int[lengthB]; 
+    int[] arrA = new int[lenA];
+    int[] arrB = new int[lenB]; 
 
-    Array.Copy(arr, 0, arrA, 0, lenghtA);
-    Array.Copy(arr, half, arrB, 0, lengthB);
+    Array.Copy(arr, 0, arrA, 0, lenA);
+    Array.Copy(arr, half, arrB, 0, lenB);
 
     // recursive
-    MergeSort(arrA, lenghtA);
-    MergeSort(arrB, lengthB);
+    MergeSort(arrA, lenA);
+    MergeSort(arrB, lenB);
 
     // merge
-    Merge(arrA, lenghtA, arrB, lengthB, arr);
+    Merge(arrA, lenA, arrB, lenB, arr);
 }
 
 void Merge(int[] arrA, int lenA, int[] arrB, int lenB, int[] sorted)
