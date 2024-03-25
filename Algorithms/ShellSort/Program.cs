@@ -11,25 +11,22 @@ foreach (var i in arr)
 
 void ShellSort(int[] arr, int length)
 {
-    int gap = length / 2;
+    var gap = length / 2;
 
     while (gap > 0)
     {
-        int i = gap;
-
-        while (i < length)
+        for (int i = gap; i < length; i++)
         {
-            int temp = arr[i]; 
-            int j = i - gap; 
-
-            while (j >= 0 && arr[j] > temp)
+            int anchor = arr[i]; 
+            int j = i; 
+            
+            while (j >= gap && arr[j - gap] > anchor)
             {
-                arr[j + gap] = arr[j];
+                arr[j] = arr[j - gap];
                 j -= gap;
             }
 
-            arr[j + gap] = temp;
-            i++;
+            arr[j] = anchor;
         }
 
         gap /= 2;
