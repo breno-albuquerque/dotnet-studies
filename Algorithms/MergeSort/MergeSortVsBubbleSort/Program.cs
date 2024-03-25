@@ -10,7 +10,7 @@ var toOrder = list.ToArray();
 // clock
 var clock = new Stopwatch();
 
-// Benchmark MergeSort
+// Benchmark MergeSortVsBubbleSort
 clock.Start();
 var mergeSortResult = MergeSort(toOrder);
 clock.Stop();
