@@ -2,23 +2,27 @@
 
 // Demo
 int[] arr = [50, 25, 92, 16, 76, 30, 43, 54, 19];
+int[] arr2 = [11, 9, 29, 7, 2, 15, 28];
 
 QuickSort(arr, 0, arr.Length - 1);
+QuickSort(arr2, 0, arr2.Length - 1);
 
 foreach (var item in arr)
     Console.Write($"{item} ");
 
+Console.WriteLine();
+
+foreach (var item in arr2)
+    Console.Write($"{item} ");
+
 void QuickSort(int[] arr, int left, int right)
 {
-    if (arr.Length <= 1)
+    if (left >= right)
         return;
-
-    if (left < right)
-    {
-        int pivot = Partition(arr, left, right);
-        QuickSort(arr, left, pivot - 1);
-        QuickSort(arr, pivot + 1, right);
-    }
+    
+    int pivot = Partition(arr, left, right);
+    QuickSort(arr, left, pivot - 1);
+    QuickSort(arr, pivot + 1, right);
 }
 
 int Partition(int[] arr, int left, int right)
@@ -27,7 +31,7 @@ int Partition(int[] arr, int left, int right)
 
     while (left < right)
     {
-        while (arr[left] <= arr[pivot]) 
+        while (left < arr.Length && arr[left] <= arr[pivot]) 
             left++;
 
         while (arr[right] > arr[pivot])
@@ -44,5 +48,6 @@ int Partition(int[] arr, int left, int right)
 
 void Swap(int first, int second, int[] arr)
 {
-    (arr[first], arr[second]) = (arr[second], arr[first]);
+    if (arr[first] != arr[second])
+        (arr[first], arr[second]) = (arr[second], arr[first]);
 }
