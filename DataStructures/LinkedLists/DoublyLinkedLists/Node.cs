@@ -2,14 +2,16 @@ namespace DoublyLinkedLists;
 
 public class Node
 {
-    public int Value { get; }
+    public int Element { get; }
 
     public Node? Prev { get; set; }
     
     public Node? Next {get; set; }
 
-    public Node(int value)
+    public Node(int element, Node? next, Node? prev)
     {
-        Value = value;
+        Element = element;
+        Next = next;
+        Prev = prev;
     }
 }
