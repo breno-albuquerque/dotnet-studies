@@ -1,13 +1,14 @@
 namespace SinglyLinkedLists;
 
-public class Node
+public sealed class Node
 {
-    public int Value { get; }
+    public int Element { get; }
 
-    public Node? Next {get; set; }
+    public Node? Next { get; set; }
 
-    public Node(int value)
+    public Node(int element, Node? next)
     {
-        Value = value;
+        Element = element;
+        Next = next;
     }
 }
