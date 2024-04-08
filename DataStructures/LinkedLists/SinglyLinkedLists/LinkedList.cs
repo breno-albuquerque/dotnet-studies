@@ -126,7 +126,7 @@ public sealed class LinkedList // Treating as 0 indexed. First element -> positi
         Length--;
     }
 
-    public void DeleteAt(int position)
+    public void DeleteAt(int position) // Deletes at given position
     {
         if (position < 0 || position >= Length)
         {
