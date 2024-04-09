@@ -49,6 +49,42 @@ public class DoublyLinkedList
         Length++;
     }
 
+    public void DeleteFirst() // Deletes element at first position
+    {
+        if (IsEmpty)
+        {
+            Console.WriteLine("List is empty");
+            return;
+        }
+
+        Head = Head!.Next;
+        Length--;
+        
+        if (IsEmpty)
+            Tail = null;
+        else
+            Head!.Prev = null;
+    }
+    
+    public void DeleteLast() // Deletes element at last position
+    {
+        if (IsEmpty)
+        {
+            Console.WriteLine("List is empty");
+            return;
+        }
+        
+        if (Length == 1) // Same as deleting first, since list has only one element 
+        {
+            DeleteFirst();
+            return;
+        }
+
+        Tail = Tail!.Prev;
+        Tail!.Next = null;
+        Length--;
+    }
+
     public void DisplayForward() // Print all elements moving towards Tail
     {
         var traverse = Head;

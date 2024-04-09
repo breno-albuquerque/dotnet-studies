@@ -98,7 +98,7 @@ public sealed class LinkedList // Treating as 0 indexed. First element -> positi
             Tail = null;
     }
 
-    public void DeleteLast() // Deletes last at first position
+    public void DeleteLast() // Deletes element at last position
     {
         if (IsEmpty)
         {
