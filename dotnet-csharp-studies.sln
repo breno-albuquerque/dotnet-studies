@@ -225,9 +225,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "Algorithms\Qui
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stacks", "Stacks", "{12645784-B497-4A42-9609-56DF5E6244DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackArrayImpl", "DataStructures\StackArrayImpl\StackArrayImpl.csproj", "{53075DBC-C6A5-49C3-8799-09000E9ED083}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackArrayImpl", "DataStructures\Stacks\StackArrayImpl\StackArrayImpl.csproj", "{53075DBC-C6A5-49C3-8799-09000E9ED083}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackLinkedListImpl", "DataStructures\StackLinkedListImpl\StackLinkedListImpl.csproj", "{68AF0974-7082-41EE-A5C8-57344DA6D8BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackLinkedListImpl", "DataStructures\Stacks\StackLinkedListImpl\StackLinkedListImpl.csproj", "{68AF0974-7082-41EE-A5C8-57344DA6D8BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
