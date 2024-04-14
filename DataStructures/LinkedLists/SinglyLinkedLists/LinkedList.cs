@@ -71,7 +71,7 @@ public sealed class LinkedList // Treating as 0 indexed. First element -> positi
             AddFirst(element);
             return;
         }
-        
+
         var newNode = new Node(element, null);
 
         var traverse = Head;
@@ -90,7 +90,7 @@ public sealed class LinkedList // Treating as 0 indexed. First element -> positi
             Console.WriteLine("List is empty");
             return;
         }
-        
+
         Head = Head!.Next;
         Length--;
 
@@ -133,7 +133,7 @@ public sealed class LinkedList // Treating as 0 indexed. First element -> positi
             Console.WriteLine("Invalid position");
             return;
         }
-        
+
         if (position == 0) // If deleting first
         {
             DeleteFirst();
@@ -162,20 +162,20 @@ public sealed class LinkedList // Treating as 0 indexed. First element -> positi
     public void Display() // Print all elements
     {
         var traverse = Head;
-        
+
         while (traverse is not null)
         {
             Console.Write(traverse.Element + " --> ");
             traverse = traverse.Next;
         }
-        
+
         Console.WriteLine();
     }
-    
+
     private void Add(int element, int position) // Add at given position different that beginning and end
     {
         var newNode = new Node(element, null);
-        
+
         int count = 0;
         var traverse = Head;
 
@@ -189,5 +189,25 @@ public sealed class LinkedList // Treating as 0 indexed. First element -> positi
         traverse.Next = newNode;
 
         Length++;
+    }
+
+    public void Reverse() // Reverse Linked List order
+    {
+        if (IsEmpty || Length == 1)
+            return;
+        
+        var first = Head;
+        var second = Head!.Next;
+
+        while (second is not null)
+        {
+            var temp = second.Next;
+            second.Next = first;
+            first = second;
+            second = temp;
+        }
+
+        Head.Next = null;
+        (Head, Tail) = (Tail, Head);
     }
 }

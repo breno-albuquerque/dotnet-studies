@@ -138,3 +138,21 @@ foreach (var number in numbers)
     Console.WriteLine($"List 8: Added number {number} in sorted order. Length: {list8.Length}");
     list8.Display();
 }
+
+Console.WriteLine();
+// --------------------------------
+
+var list9 = new LinkedList();
+list9.AddFirst(46);
+list9.AddFirst(89);
+list9.AddFirst(76);
+list9.AddFirst(43);
+list9.AddFirst(6);
+list9.AddFirst(77);
+
+Console.WriteLine("List 9:");
+list9.Display();
+list9.Reverse();
+Console.WriteLine("List 9 - Reversed:");
+list9.Display();
+    
