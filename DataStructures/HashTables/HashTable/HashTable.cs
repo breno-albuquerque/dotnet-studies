@@ -1,4 +1,3 @@
-
 namespace HashTable;
 
 public sealed class HashTable<TKey, TValue>
